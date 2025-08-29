@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voice Agent Web UI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎙️ Voice Agent Web</h1>
+      <div class="controls">
+        <button id="btnStart">Start</button>
+        <button id="btnStop">Stop</button>
+        <button id="btnQuit">Quit</button>
+      </div>
+
+      <div class="send-row">
+        <input
+          id="manualInput"
+          placeholder="Send raw input to backend (e.g., q)"
+        />
+        <button id="btnSend">Send</button>
+      </div>
+
+      <div class="status" id="status">Status: unknown</div>
+
+      <div class="logs" id="logs"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
